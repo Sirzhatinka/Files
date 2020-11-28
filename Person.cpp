@@ -51,31 +51,3 @@ bool operator<(const Person& p1, const Person& p2) {
     else
         return p1.birthYear < p2.birthYear;
 }
-
-
-void Person::set() {
-    std::cout << "Push the first name: ";
-    std::cin >> firstName;
-    std::cout << "Push the last name: ";
-    std::cin >> lastName;
-    std::cout << "The birth date as dd/mm/yyyy: ";
-    char dummy;
-    std::cin >> birthDay >> dummy >> birthMonth >> dummy >> birthYear;
-    while (true) {
-        std::string paul;
-        std::cout << "Push the sex (male/female): ";
-        std::cin >> paul;
-        if (paul == "male") {
-            sex = false;
-            break;
-        }
-        else if (paul == "female") {
-            sex = true;
-            break;
-        }
-        else {
-            std::cout << "Incorrect input.\n";
-            continue;
-        }
-    }
-}

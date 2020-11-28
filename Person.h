@@ -10,7 +10,6 @@ struct Person {
     char lastName[20];
     bool sex;
     int birthDay, birthMonth, birthYear;
-    void set();
 };
 std::ostream& operator<<(std::ostream&, Person&);
 std::istream& operator>>(std::istream&, Person&);
