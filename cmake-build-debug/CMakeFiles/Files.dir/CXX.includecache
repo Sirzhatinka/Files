@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/CLionproj/Trainexes/Files/Person.h
+string
+-
+cstring
+-
+iostream
+-
+
+E:/CLionproj/Trainexes/Files/implementation.cpp
+implementation.h
+E:/CLionproj/Trainexes/Files/implementation.h
+
+E:/CLionproj/Trainexes/Files/implementation.h
+array
+-
+fstream
+-
+Person.h
+E:/CLionproj/Trainexes/Files/Person.h
+
